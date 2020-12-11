@@ -1,0 +1,5 @@
+<view class="scroll-view-item">
+  <card class="card" title="{{movie.title}}" subTitle="{{movie.release_date}}" bgImg="{{movie.image}}"
+    expand
+  />
+</view>

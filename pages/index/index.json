@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search-bar": "mini-ali-ui/es/search-bar/index",
+    "movie": "/components/movie/movie"
+  }
+}

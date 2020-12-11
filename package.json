@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mini-ali-ui": "^1.2.2",
+    "url-parse": "^1.4.7"
+  }
+}

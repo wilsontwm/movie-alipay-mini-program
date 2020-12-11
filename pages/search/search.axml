@@ -1,0 +1,10 @@
+<view class="container">
+  <view>
+    <search-bar value="{{searchInput}}" focus="{{true}}" placeholder="Find movie" onClear="handleClear" onInput="handleInput" onSubmit="handleSubmit" showCancelButton="{{false}}" />
+  </view>
+  <view class="movie-section">
+    <scroll-view class="scroll-view" scroll-y="{{true}}">
+      <movie a:for="{{movies}}" a:key="*this" a:for-item="movie" movie="{{movie}}" />
+    </scroll-view>
+  </view>
+</view>

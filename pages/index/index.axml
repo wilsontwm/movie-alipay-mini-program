@@ -1,0 +1,23 @@
+<view class="container">
+  <view>
+    <search-bar value="{{searchInput}}" focus="{{true}}" placeholder="Find movie" onClear="handleClear" onInput="handleInput" onSubmit="handleSubmit" showCancelButton="{{false}}" />
+  </view>
+  <view class="title">Now Playing</view>
+  <view class="movie-section">
+    <scroll-view class="scroll-view_H" scroll-x="{{true}}">
+      <movie a:for="{{nowPlayingMovies}}" a:key="*this" a:for-item="movie" movie="{{movie}}" />
+    </scroll-view>
+  </view>
+  <view class="title">Trending</view>
+  <view class="movie-section">
+    <scroll-view class="scroll-view_H" scroll-x="{{true}}">
+      <movie a:for="{{popularMovies}}" a:key="*this" a:for-item="movie" movie="{{movie}}" />
+    </scroll-view>
+  </view>
+  <view class="title">Upcoming</view>
+  <view class="movie-section">
+    <scroll-view class="scroll-view_H" scroll-x="{{true}}">
+      <movie a:for="{{upcomingMovies}}" a:key="*this" a:for-item="movie" movie="{{movie}}" />
+    </scroll-view>
+  </view>
+</view>
